@@ -159,7 +159,44 @@ footer .favicons {
   margin-right: 17px;
 }
 /* --------------------- Media Queries --------------------- */
+@media (min-width: 0px) {
+  .sec2-5 {
+    flex-direction: column;
+    box-shadow: none;
+  }
+  .home img, .commercial img {
+    width: 430px;
+    margin-bottom: 80px;
+  }
 
+  .commercial img {
+    margin-top: 80px;
+  }
+
+  .sec3 {
+    margin-top: 200px;
+  }
+
+  .sec4 {
+    margin-top: 125px;
+  }
+
+  .sec2-5 p {
+    width: 300px;
+    text-align: center;
+  }
+
+  .sec2-5 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  
+}
 @media (min-width: 576px) {
   .content {
   display: flex;
