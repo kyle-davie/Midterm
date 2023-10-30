@@ -9,7 +9,7 @@
   <style>
     body {
       height: 225vh;
-      background-color: rgb(134, 134, 134);
+      background-color: rgb(106, 112, 129);
       overflow-x: hidden;
     }
 
@@ -75,6 +75,29 @@ h1 {
   justify-content: center;
 }
 
+
+@media (max-width: 576px){
+  .title h1 {
+    text-align: center;
+  }
+
+  #blind {
+    translate: 0px 77px;
+  }
+
+  
+
+  .line-outer {
+    position: absolute;
+    top: 225px;
+  }
+
+  .blinds {
+    margin-top: 75px;
+  }
+
+}
+
 @media (max-width: 992px) {
   .blinds, .shades, .shutters {
     width: 500px;
@@ -132,7 +155,7 @@ h1 {
         <h1>Residential Products</h1>
         <div class="line-outer"><div class="line"></div></div>
       </div>
-      <h1>Blinds</h1>
+      <h1 id="blind">Blinds</h1>
       <div class="blinds">
         <div class="image">
           <img src="images/wood blinds HD.jpg" alt="" height="500" width="500">

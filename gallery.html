@@ -8,34 +8,59 @@
   <title>Midterm</title>
   <style>
     footer {
-      position: fixed;
-      width: 100vw;
-      height: 5vh;
-      display: flex;
-      bottom: 0;
-      justify-content: space-between;
-      color: blanchedalmond;
-      background-color: rgb(27, 27, 27);
-      align-items: center;
-    }
+  position: fixed;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  bottom: 0;
+  justify-content: space-between;
+  color: blanchedalmond;
+  background-color: rgb(27, 27, 27);
+  align-items: center;
+  
+}
 
     footer .favicons {
   margin-right: 17px;
 }
 
-    img {
-      object-fit: cover;
+    .content img {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      margin: 20px;
+      border-radius: 6%;
+      width: 500px;
+      height: 500px;
+      object-fit: contain;
     }
 
     main {
-      height: 300vh;
+      height: 320vh;
       overflow-x: hidden;
+    }
+
+    body {
+      background-color: rgb(106, 112, 129);
     }
 
     .content {
       margin-top: 90px;
       padding-left: 90px;
       padding-right: 90px;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      main {
+        height: 790vh;
+      }
+    }
+    @media (min-width: 767px) {
+      main {
+        height: 320vh;
+      }
     }
 
     
@@ -78,58 +103,29 @@
   </header>
   <main>
     <div class="content">
-  <!--    <div class="row1">
-    <img width="500px" height="500px" src="MidtermImages/1.jpg" alt="photo">
-        <img width="500px" height="500px" src="MidtermImages/37371 AZ-21.jpg" alt="photo">
-        <img width="500px" height="500px" src="MidtermImages/37371 AZ-24.jpg" alt="photo">
-      </div>
-      <div class="row2">
-        <img width="500px" height="500px" src="MidtermImages/37371 AZ-7.jpg" alt="photo">
-        <img width="500px" height="500px" src="MidtermImages/Goodyear City Hall and Library_High Res-21.jpg" alt="photo">
-        <img width="500px" height="500px" src="MidtermImages/Modern Living Room with Foundation 5.jpg" alt="photo">
-      </div>
-      <div class="row3">
-        <img width="500px" height="500px" src="MidtermImages/NEOGA_03B_BEDROOM_ANGLED_HALF.jpg" alt="photo">
-        <img width="500px" height="500px" src="MidtermImages/NEOGA_08A-LIVINGROOM-ANGLED2_HALF.jpg" alt="photo">
-        <img width="500px" height="500px" src="MidtermImages/Optima Kierland_High Res-44.jpg" alt="photo">
-      </div>
-      <div class="row4">
-        <img width="500px" height="500px" src="MidtermImages/QUARTER_1_EXT.jpg" alt="photo">
-        <img width="500px" height="500px" src="MidtermImages/Right-Image-1440-x-1200_SHUTTER.jpg" alt="photo">
-      </div>
-      <div class="row5">
-        <img width="500px" height="500px" src="MidtermImages/Screenshot 2022-12-15 153810.jpg" alt="photo">
-        <img width="500px" height="500px" src="MidtermImages/wood blinds HD.jpg" alt="photo">
-      </div> -->
-
       <div class="row align-items-stretch">
-        <div class="col-6 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/1.jpg" alt="photo"></div>
-        <div class="col-6 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/37371 AZ-21.jpg" alt="photo"></div>
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/1.jpg" alt="photo"></div>
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/37371 AZ-21.jpg" alt="photo"></div>
       </div>
       <div class="row">
-        <div class="col-4 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/37371 AZ-24.jpg" alt="photo"></div>
-        <div class="col-4 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/37371 AZ-7.jpg" alt="photo"></div>
-        <div class="col-4 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/Goodyear City Hall and Library_High Res-21.jpg" alt="photo"></div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/37371 AZ-24.jpg" alt="photo"></div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/37371 AZ-7.jpg" alt="photo"></div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/Goodyear City Hall and Library_High Res-21.jpg" alt="photo"></div>
       </div>
       <div class="row">
-        <div class="col d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/Modern Living Room with Foundation 5.jpg" alt="photo"></div>
-        <div class="col d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/NEOGA_03B_BEDROOM_ANGLED_HALF.jpg" alt="photo"></div>
+        <div class="col-md-6 col-sm-12   d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/Modern Living Room with Foundation 5.jpg" alt="photo"></div>
+        <div class="col-md-6 col-sm-12   d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/NEOGA_03B_BEDROOM_ANGLED_HALF.jpg" alt="photo"></div>
       </div>
       <div class="row">
-        <div class="col d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/NEOGA_08A-LIVINGROOM-ANGLED2_HALF.jpg" alt="photo"></div>
-        <div class="col d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/Optima Kierland_High Res-44.jpg" alt="photo"></div>
-        <div class="col d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/QUARTER_1_EXT.jpg" alt="photo"></div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/NEOGA_08A-LIVINGROOM-ANGLED2_HALF.jpg" alt="photo"></div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/Optima Kierland_High Res-44.jpg" alt="photo"></div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/QUARTER_1_EXT.jpg" alt="photo"></div>
       </div>
       <div class="row">
-        <div class="col d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="iImages/Right-Image-1440-x-1200_SHUTTER.jpg" alt="photo"></div>
-        <div class="col d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="iImages/Screenshot 2022-12-15 153810.jpg" alt="photo"></div>
-        <div class="col d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="iImages/wood blinds HD.jpg" alt="photo"></div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/Right-Image-1440-x-1200_SHUTTER.jpg" alt="photo"></div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/Screenshot 2022-12-15 153810.jpg" alt="photo"></div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center"><img style="width: 500px; height: 500px;" class="img-fluid" src="images/wood blinds HD.jpg" alt="photo"></div>
       </div>
-
-      
-     
-     
-
     </div>
   </main>
   <footer>

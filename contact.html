@@ -55,12 +55,20 @@ footer .favicons {
 }
 
 body {
-  background-color: rgb(134, 134, 134);
+  background-color: rgb(106, 112, 129);
 }
 
 @media (max-width: 576px) {
   .content form {
     width: 500px;
+  }
+
+  #message {
+    width: 300px;
+  }
+
+  main {
+    height: 110vh;
   }
 }
 
@@ -117,7 +125,7 @@ body {
           <label for="company">Company</label>
           <input type="text" id="company"></div>
         <label for="message">Message</label>
-        <textarea id="message" cols="30" rows="10"></textarea>
+        <textarea id="message" cols="26" rows="10"></textarea>
         <button class="bg-warning btn-outline-dark" type="submit">Submit</button>
       </form>
     </div>
